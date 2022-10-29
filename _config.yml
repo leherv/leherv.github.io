@@ -1,6 +1,8 @@
 # Fuse Core Theme for Jekyll - Settings
 # https://github.com/tsjensen/fuse-core
 
+remote_theme: tsjensen/fuse-core
+
 markdown: kramdown
 permalink: pretty
 exclude: ['README.*', 'LICENSE.txt']
@@ -14,7 +16,7 @@ sass:
 # Main Headline, name required, subtitle optional
 name: Viktor Leher
 #subtitle:
-subtitle: Software Engineer
+subtitle: Software Craftsman
 
 # Title attribute of HTML Page, uses 'name' from above if empty
 title: leherv
@@ -66,29 +68,44 @@ avatar: "https://avatars.githubusercontent.com/u/17571392"
 # All the social media and other sites that we want to link to. The 'show' flag determines if the link is shown.
 # The order of this list controls the order of the links on the page. Feel free to add.
 links:
-  - xing:
-      name: Xing
-      show: false
-      href: https://www.xing.com/profile/YOUR_XING_USERNAME/
-      icon: fab fa-xing
+  - github:
+      name: GitHub
+      show: true
+      href: https://github.com/leherv
+      icon: fab fa-github
   - linkedin:
       name: LinkedIn
       show: true
       href: https://www.linkedin.com/in/leherv/
       icon: fab fa-linkedin
-  - googleplus:
-      name: Google+
-      show: false
-      href: https://plus.google.com/+YOUR_GOOGLEPLUS_USERNAME
-      icon: fab fa-google-plus
+  - stackoverflow:
+      name: Stack Overflow
+      show: true
+      href: https://stackoverflow.com/users/6260964/leherv
+      icon: fab fa-stack-overflow
   - twitter:
       name: Twitter
       show: false
       href: https://twitter.com/YOUR_TWITTER_USERNAME
       icon: fab fa-twitter
+  - email:
+      name: Email
+      show: false
+      href: mailto:jonathan.doe@host.domain
+      icon: fas fa-envelope
+  - xing:
+      name: Xing
+      show: false
+      href: https://www.xing.com/profile/YOUR_XING_USERNAME/
+      icon: fab fa-xing
+  - googleplus:
+      name: Google+
+      show: false
+      href: https://plus.google.com/+YOUR_GOOGLEPLUS_USERNAME
+      icon: fab fa-google-plus
   - weibo:
       name: 微博
-      show: true
+      show: false
       href: https://weibo.com/YOUR_WEIBO_USERNAME
       icon: fab fa-weibo
   - vine:
@@ -103,7 +120,7 @@ links:
       icon: fab fa-facebook
   - vkontakte:
       name: ВКонтакте
-      show: true
+      show: false
       href: https://vk.com/YOUR_VK_USERNAME
       icon: fab fa-vk
   - instagram:
@@ -131,21 +148,11 @@ links:
       show: false
       href: http://www.last.fm/user/YOUR_LASTFM_USERNAME
       icon: fab fa-lastfm
-  - github:
-      name: GitHub
-      show: true
-      href: https://github.com/leherv
-      icon: fab fa-github
   - codepen:
       name: CodePen
       show: false
       href: https://codepen.io/YOUR_CODEPEN_USERNAME
       icon: fab fa-codepen
-  - stackoverflow:
-      name: Stack Overflow
-      show: true
-      href: https://stackoverflow.com/users/6260964/leherv
-      icon: fab fa-stack-overflow
   - reddit:
       name: Reddit
       show: false
@@ -166,11 +173,6 @@ links:
       show: false
       href: http://host.domain/your_blog
       icon: fas fa-book-open
-  - email:
-      name: Email
-      show: false
-      href: mailto:jonathan.doe@host.domain
-      icon: fas fa-envelope
   - publickey:
       name: PGP Key
       show: false
@@ -181,7 +183,5 @@ links:
 # Extra HTML which will be displayed below the links. Keep it short. Leave empty to disable.
 #extra_html:
 extra_html: >
-    Any (multiline) text containing simple HTML,
-    such as links or ... lorem ipsum.
 
 #EOF

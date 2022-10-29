@@ -4,19 +4,18 @@
 
 $fc-footer-height: 44px;
 
-html, body {
-    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+html,
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
+
 html {
     position: relative;
     min-height: 100%;
 }
-body {
-    margin-bottom: $fc-footer-height;
-}
 
 .fullscreen-background {
-    background: url("../images/background.jpg") no-repeat center center fixed; 
+    background: url("../images/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,11 +25,13 @@ body {
 div.glass-pane {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    min-height: 42vh;  /* always cover at least the sky */
+    min-height: 42vh;
+    /* always cover at least the sky */
 }
 
 div.fuse-core-content {
     color: white;
+    height: 100vh;
 }
 
 
@@ -47,11 +48,15 @@ div.fuse-core-content {
 
 h1 {
     letter-spacing: 0.1em;
-    @media (max-width: 575.98px) {  /* used on bootstrap size 'xs' */
+
+    @media (max-width: 575.98px) {
+        /* used on bootstrap size 'xs' */
         letter-spacing: 0;
     }
+
     font-size: 3em;
 }
+
 h3 {
     font-size: 1.2em;
 }
@@ -60,10 +65,11 @@ h3 {
 /* --------- The Main Links -------------------------------------------------------------------- */
 
 div.row.links {
-    > div {
+    >div {
         white-space: nowrap;
         padding: 0;
     }
+
     a {
         color: white;
         border-radius: 100%;
@@ -72,7 +78,9 @@ div.row.links {
         font-size: 1.8em;
         line-height: 1em;
         overflow: hidden;
-        @media (max-width: 575.98px) {  /* used on bootstrap size 'xs' */
+
+        @media (max-width: 575.98px) {
+            /* used on bootstrap size 'xs' */
             border-radius: 10px;
             width: 100%;
         }
@@ -85,11 +93,12 @@ div.row.links {
             background-color: rgba(0, 0, 0, 0.5);
         }
 
-        > i {
+        >i {
             display: inline-block;
             margin: 16px 12px;
         }
-        > span {
+
+        >span {
             margin-right: 15px;
         }
     }
@@ -130,9 +139,11 @@ footer {
     .col {
         padding: 0;
     }
+
     a {
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
+
         &:hover {
             text-decoration: none;
             color: white;
